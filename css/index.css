@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 40%;
+    width: 100%;
+    margin: 0 auto;
+    background: #00868B;
+}
+header h1{
+    color:#ffffff;
+    border:3px solid #fff;
+    width:400px;
+    padding:20px;
+    margin:0 auto;
+    text-align:center;
+    position: relative;
+    font-size: 50px;
+    font-family: 华文行楷;
+    top: 50px;
+}
+
+.banner{
+    display:block;
+    height:100px;
+    width:90%;
+    margin:0 auto;
+}
+.banner ul {
+    display:block;
+}
+.banner li{
+    float:left;
+    text-align:center;
+    list-style:none;
+    width:200px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+}
+.banner li a{
+    color: #333;
+    -webkit-transition:color 0.5s;
+	transition:color 0.5s;
+}
+.banner li .circle{
+    height: 100px;
+    width:100px;
+    margin: 0 auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    -webkit-transition:box-shadow 0.5s;
+	transition:box-shadow 0.5s;
+}
+.banner li .fa{
+    padding-top: 15px;
+    font-size:60px;
+}
+.banner li  a:hover,.aOn{
+    color: #000 !important;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+}
+.banner li .circle:hover,.circleOn{
+    border: none !important;
+    -moz-box-shadow: 0px 0px 5px 10px #00868B;
+    box-shadow: 0px 0px 5px 10px #00868B;
+}
+
+/*--start footer--*/
+footer{
+    position:absolute;
+    bottom:10px;
+    left:40%;
+}
+footer p{
+    text-align: center;
+}
+footer .fa{
+    font-size: 20px;
+}
+/*--ended footer--*/
