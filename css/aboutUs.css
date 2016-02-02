@@ -1,11 +1,23 @@
 body{
     margin:0;
 	padding:0;
-	background: #47c9af;
+	/*background: #47c9af;*/
+    background: url('../images/bacg.jpg') no-repeat center center;
+    background-size: 100%;
 	color:#74777b;
 	font-weight:300;
 	font-size:1.5em;
-	font-family: "Raleway","Araill"}
+	font-family: "Raleway","Araill";
+    overflow: hidden;
+}
+.container{
+    width:100%;
+    height: 800px;
+    z-index: -99;
+    background: rgba(0,0,0,0.5);
+    border:1px solid #eee;
+    border-radius: 5px;
+}
 
 ul{
     list-style:none;
@@ -13,8 +25,10 @@ ul{
 	margin: 0;
 }
 
-a:link,a:visited,a:focus{text-decoration: none;
-						outline: none;}
+a:link,a:visited,a:focus{
+    text-decoration: none;
+	outline: none;
+}
 
 *,*:after,*:before{
 	-webkit-box-sizing:border-box;
@@ -43,17 +57,19 @@ a:link,a:visited,a:focus{text-decoration: none;
 .tooltip{/*a*/
 	display: inline-block;
 	font-weight:700;
-	color: rgba(0,0,0,0.3);
+	/*color: rgba(0,0,0,0.3);*/
+    color: #FFFAFA;
 	padding: 0.15em 0.25em 0 0 ;
 	position: relative;
 	z-index: 999;/*设置元素的堆叠顺序*/
-	background: #47c9af;
+	/*background: #47c9af;*/
 	-webkit-transition:color 1s;
 	transition:color 1s;
 }
 .tooltip:hover,.aOn{
-    color:rgba(225,225,225,1);
-    }/*字体颜色变化*/
+    color:#fff;
+    border-bottom: 3px solid #fff;
+}
 .tooltip .tooltip-content {/*图标span*/
 	position: absolute;
 	z-index: 9999;
