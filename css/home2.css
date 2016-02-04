@@ -1,14 +1,14 @@
+*,body{
+    margin: 0;
+    padding: 0;
+}
 body{
-    margin:0;
-	padding:0;
-	/*background: #47c9af;*/
-    background: url('../images/bacg.jpg') no-repeat center center;
-    background-size: 100% 100%;
-	color:#74777b;
-	font-weight:300;
+    background: url(../images/bacg.jpg) no-repeat center center;
+    overflow: hidden;
+    background-size: 100%;
+    font-weight:300;
 	font-size:1.5em;
 	font-family: "Raleway","Araill";
-    /*overflow: hidden;*/
 }
 .container{
     width:100%;
@@ -18,15 +18,14 @@ body{
     border:1px solid #eee;
     border-radius: 5px;
 }
-
 ul{
-    list-style:none;
+	list-style:none;
 	padding: 0;
 	margin: 0;
 }
 
 a:link,a:visited,a:focus{
-    text-decoration: none;
+	text-decoration: none;
 	outline: none;
 }
 
@@ -43,35 +42,36 @@ a:link,a:visited,a:focus{
 	content:"";
 }
 
-*:after{clear:both;}/*清除浮动*/
+*:after{
+	clear:both;
+	}/*清除浮动*/
 
-/*Navgation*/
+/*start Navgation*/
 .nav{
 	width:800px;
-	margin:100px 50px 70px 100px;
+	height:300px;
+	margin:120px 50px 200px 100px;
 }
 .nav li{
 	display: inline-block;
-	margin:0em 1em;/*上下0 左右1  上右下左*/
+	margin:0em 1em;
 }
 .tooltip{/*a*/
 	display: inline-block;
 	font-weight:700;
-	/*color: rgba(0,0,0,0.3);*/
     color: #DCDCDC;
 	padding: 0.15em 0.25em 0 0 ;
 	position: relative;
 	z-index: 999;/*设置元素的堆叠顺序*/
-	/*background: #47c9af;*/
 	-webkit-transition:color 1s;
 	transition:color 1s;
 }
 .tooltip:hover,.aOn{
-    color:#fff;
     border-bottom: 3px solid #fff;
+    color:#fff;
 }
 .tooltip .tooltip-content {/*图标span*/
-	position: absolute;
+    position: absolute;
 	z-index: 9999;
 	width: 80px;
 	height: 80px;
@@ -90,7 +90,6 @@ a:link,a:visited,a:focus{
 }
 .tooltip .tooltip-content i{/*span图标*/
 	opacity:0;
-    font-size: 30px;
 	-webkit-transition:opacity 1s,webkit-transform 1s;
 	transition:opacity 1s,transform 1s;
 }
@@ -100,7 +99,7 @@ a:link,a:visited,a:focus{
 	-webkit-transform-origin:50% 100%;
 	transform-origin:50% 100%;
 }
-.tooltip-effect .tooltip-content i{/*toolitip-effect-1下的tooltip-content的样式*/
+.tooltip-effect .tooltip-content i{
 	-webkit-transform:translate3d(0,20px,0);
 	transform:rotate3d(0,20px,0);
 }
@@ -115,71 +114,21 @@ a:link,a:visited,a:focus{
 }
 /*ended navgation*/
 
-/*start introduction*/
-.dodo,.benben{
-    width:50%;
-    float: left;
-}
-.photo{
-    text-align: center;
-    position: relative;
-    width:200px;
-    height:200px;
-    border-radius: 50%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.overlay{
-    z-index: 9999;
-    width:100px;
-    height:100px;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.4);
-    position:absolute;
-    top:25%;
-    left:25%;
-    text-align: center;
-    vertical-align: middle;
-    bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s;
-}
-.overlay span{
-    position: relative;
-    top: 40px;
-    color: #fff;
-}
-.photo img{
-    width:200px;
-    height:200px;
-    z-index: 999;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 20px rgba(255,255,255,0.5);
-}
-.overlayOn{
-    visibility:visible;
-    opacity: 1 !important;
-    transform:scale(2,2);
-	-webkit-transform:scale(2,2);
-	-o-transform:scale(2,2);
-}
-.intro{
-    margin-top: 60px;
-}
-.intro p{
-    color:#FFEFD5;
-    margin-left: 30%;
-    border-bottom: 1px solid #eee;
-    width:60%;
-    padding-left: 20px;
+h1{
+   color:#ffffff;
+   width:50%;
+   margin:0 auto;
+   text-align:center;
+   position: relative;
+   font-size: 100px;
+   font-family: 华文行楷;
+   bottom:350px;
 }
 
 /*--start footer--*/
 footer{
     position:absolute;
-    bottom:-150px;
+    bottom:20px;
     left:40%;
 }
 footer p{

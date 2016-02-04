@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>校园e生活-Disadvantages</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/disadvantages.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="pageOne">
+
+            <div class="menu">
+                <i class="fa fa-list"></i>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="advantages.html"><i class="fa fa-thumbs-o-up"></i> Advantages</a></li>
+                    <li><a href="#"><i class="fa fa-thumbs-o-down"></i> Disadvantages</a></li>
+                    <li><a href="aboutUs.html"><i class="fa fa-slideshare"></i> AboutUs</a></li>
+                </ul>
+            </div>
+            <table class="table table-bordered">
+                <tr>
+                    <td class="orange" colspan="3">
+                        <img src="images/netCheat.jpg" alt="网络诈骗图1">
+                    </td>
+                    <td class="purple" colspan="3">
+                        <a href="#netFraud">网络诈骗</a>
+                    </td>
+                    <td class="blue" colspan="2">
+                        <img src="images/netCheat1.jpg" alt="网络诈骗图2">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="word blue" colspan="2">
+                        <a href="#physical">生理健康</a>
+                    </td>
+                    <td class="black" colspan="4">
+                        <span class="title">Disadvanitages</span>
+                        <br>
+                        <span class="small">校园<i class="fa fa-edge"></i>生活</span>
+                        <!-- <img src="images/title.png" alt="" style="border:none"> -->
+                    </td>
+                    <td class="word orange" colspan="2">
+                        <a href="#mentally">心理健康</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="orange" colspan="2">
+                        <a href="#study">
+                            <img src="images/adroit4.jpg" alt="荒废学业图1">
+                        </a>
+                    </td>
+                    <td class="purple" colspan="3">
+                        <a href="#study">荒废学业</a>
+                    </td>
+                    <td class="blue" colspan="3">
+                        <a href="#study">
+                            <img src="images/study2.jpg" alt="荒废学业图2">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="clear"></div>
+        </div>
+
+        <div id="IntFraud">
+            <a name="netFraud">网络诈骗</a>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/disadvantages.js"></script> -->
+        <script type="text/javascript">
+            $(".menu").click(function(){
+                if ($(".navigation").is(":hidden")){
+                    $(".navigation").slideDown();
+                    $(".menu").addClass("menuGo");
+                }
+                else{
+                    $(".navigation").slideUp();
+                    $(".menu").removeClass("menuGo");
+                }
+
+            })
+        </script>
+    </body>
+</html>
