@@ -3,11 +3,13 @@
     padding:0;
 }
 body{
-
+    font-family: 华文行楷;
+    text-align: center;
 }
 .clear{
     clear: both;
 }
+/*--start 导航栏--*/
 .menu{
     z-index: 9999;
     width: 60px;
@@ -26,7 +28,6 @@ body{
     color: #47c9af;
     position: relative;
     top:15px;
-    left:13px;
 }
 .navigation{
     width:200px;
@@ -58,6 +59,36 @@ ul{
 .menuGo{
     right:210px;
 }
+/*--ended 导航栏--*/
+
+/*--start 回到顶部浮标--*/
+.gotoTop{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(28, 28,28, 0.5);
+    transition: bax-shadow 0.5s,background 0.5;
+}
+.gotoTop:hover{
+    box-shadow:0 0 0 10px rgba(139,137,137,0.5);
+    background: #fff;
+}
+.gotoTop:hover .fa{
+    color:	#FFA500;
+}
+.gotoTop .fa{
+    font-size: 35px;
+    margin-top: 7px;
+    color: #FFFAFA;
+    transition: color 0.5s;
+}
+/*--ended 回到顶部浮标--*/
+
+/*--start Disadvantages首页--*/
 table{
     width: 100%;
     height: 100%;
@@ -68,7 +99,6 @@ td{
 }
 tr,td{
     text-align: center;
-    font-family: 华文行楷;
     font-size: 30px;
     font-weight: 700;
     vertical-align: middle;
@@ -119,3 +149,120 @@ td img{
     line-height: 200px;
     color: #FFEFD5;
 }
+/*--ended Disadvantages首页--*/
+
+.page{
+    margin-bottom: -20px;
+}
+.page h1{
+    text-align: center;
+    width: 300px;
+    margin:20px auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #337ab7;
+}
+.page h1 a:hover{
+    text-decoration: none;
+}
+
+/*--start 荒废学业--*/
+#study{
+    /*margin-bottom: 30px;*/
+}
+#study p{
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+#study img{
+    float: left;
+    width:25%;
+}
+/*--ended 荒废学业--*/
+
+/*--start 对生理健康的影响--*/
+#physical{
+    background: #eaeaea;
+}
+.leftContent{
+    display:inline-block;
+    border:1px solid #000;
+    height: 50%;
+    width:35%;
+    border:3px solid #eee;
+}
+.arrow{
+    position: relative;
+    left:60px;
+    bottom: 150px;
+}
+.arrow .fa{
+    font-size: 50px;
+}
+.rightContent img{
+    float: right;
+    width:30%;
+    margin-right: 15%;
+    height:50%;
+    height:300px;
+}
+/*--ended 对生理健康的影响--*/
+
+/*--start 对心理健康的影响--*/
+#mentally{
+    background: #eaf7f4;
+}
+#mentally img{
+    border:1px solid #eee;
+    border-radius: 50%;
+    height:400px;
+    width:400px;
+}
+#mentally .mentalIntro{
+    display: inline-block;
+    width:60%;
+    height:400px;
+    border: 3px solid #eee;
+}
+.topContent{
+    margin-bottom: 50px;
+}
+.topContent img{
+    float: left;
+    margin-left: 50px;
+}
+.bottomContent img{
+    float: right;
+    margin-right: 50px;
+}
+/*--ended 对心理健康的影响--*/
+
+/*--start 网络诈骗--*/
+#netfraud{
+    background: #fdf1e6
+}
+#netfraud h1{
+
+}
+.tip{
+    height: 500px;
+    width:25%;
+    float: left;
+}
+.tips1{
+    background: url('../images/tips1.png') no-repeat;
+    background-size: 100%;
+}
+.tips2{
+    background: url('../images/tips2.png') no-repeat;
+    background-size: 100%;
+}
+.tips3{
+    background: url('../images/tips3.png') no-repeat;
+    background-size: 100%;
+}
+.tips4{
+    background: url('../images/tips4.png') no-repeat;
+    background-size: 100%;
+}
+/*--ended 网络诈骗--*/

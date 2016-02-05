@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     </head>
     <body>
-        <div id="pageOne">
-
+        <div id="homeNav" class="page">
             <div class="menu">
                 <i class="fa fa-list"></i>
             </div>
@@ -26,6 +25,7 @@
                 <tr>
                     <td class="orange" colspan="3">
                         <img src="images/netCheat.jpg" alt="网络诈骗图1">
+                        <a id="toTop"></a>
                     </td>
                     <td class="purple" colspan="3">
                         <a href="#netFraud">网络诈骗</a>
@@ -64,13 +64,93 @@
                     </td>
                 </tr>
             </table>
-
+            <div class="gotoTop">
+                <a href="#toTop"><i class="fa fa-arrow-up"></i></a>
+            </div>
             <div class="clear"></div>
         </div>
 
-        <div id="IntFraud">
-            <a name="netFraud">网络诈骗</a>
+        <!--start 对学业的影响-->
+        <div id="study" class="page">
+            <h1><a name="study">荒废学业</a></h1>
+            <div class="studyIntro">
+                <p>
+                    互联网在给大学生带来积极影响的同时，
+                    也对大学生产生了不少消极的影响。
+                    例如，不少大学生沉迷网络网游，荒废了学习。
+                    互联网在给大学生带来积极影响的同时，
+                    也对大学生产生了不少消极的影响。
+                    例如，不少大学生沉迷网络网游，荒废了学习。
+                </p>
+            </div>
+            <div class="studyImg">
+                <img src="images/adroit1.jpeg" alt="">
+                <img src="images/adroit2.jpg" alt="">
+                <img src="images/adroit4.jpg" alt="">
+                <img src="images/adroit7.jpg" alt="">
+                <div class="clear"></div>
+            </div>
         </div>
+        <!--ended 对学业的影响-->
+
+        <!--start 对生理健康的影响-->
+        <div id="physical" class="page">
+            <h1><a name="physical">生理健康</a></h1>
+
+            <span class="leftContent">
+
+            </span>
+            <span class="arrow">
+                <i class="fa fa-arrow-right"></i>
+            </span>
+            <span class="rightContent">
+                <img src="images/adroit5.jpg" alt="">
+                <div class="clear"></div>
+            </span>
+        </div>
+        <!--ended 对生理健康的影响-->
+
+        <!--start 对心理健康的影响-->
+        <div id="mentally" class="page">
+            <h1><a name="mentally">心理健康</a></h1>
+
+            <div class="topContent">
+                <span class="mentalImg">
+                    <img src="images/physical1.jpg" alt="">
+                </span>
+                <span class="mentalIntro"></span>
+                <div class="clear"></div>
+            </div>
+            <div class="bottomContent">
+                <span class="mentalIntro"></span>
+                <span class="mentalImg">
+                    <img src="images/physical1.jpg" alt="">
+                </span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--ended 对心理健康的影响-->
+
+        <!--start 网络诈骗-->
+        <div id="netFraud" class="page">
+            <h1><a name="netFraud">网络诈骗</a></h1>
+            <div class="router">
+                <div class="spanImg1"></div>
+                <div class="spanImg2"></div>
+                <div class="spanImg3"></div>
+                <div class="spanImg4"></div>
+            </div>
+            <div class="preventFraud">
+                <h2>防骗小tips</h2>
+                <div class="tip tips1"></div>
+                <div class="tip tips2"></div>
+                <div class="tip tips3"></div>
+                <div class="tip tips4"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--ended 网络诈骗-->
+
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <!-- <script src="js/disadvantages.js"></script> -->
@@ -84,8 +164,8 @@
                     $(".navigation").slideUp();
                     $(".menu").removeClass("menuGo");
                 }
-
             })
+
         </script>
     </body>
 </html>
