@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>生活</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/zerogrid.css" >
+	<link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.1.1.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/forms.js"></script>
+	<script src="js/jquery.ui.totop.js"></script>
+	<script src="js/jquery.equalheights.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.ui.totop.js"></script>
+	<script src="js/tms-0.4.1.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script></head>
+<body class="">
+	<!--==============================header=================================-->
+	<header class="page1">
+		<div class="zerogrid">
+			<div class="col-full">
+				<div class="wrap-col">
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men">
+									<a onClick="goToByScroll('page1'); return false;" href="#">网购</a> <strong class="hover"></strong>
+								</li>
+								<li class="men1">
+									<a onClick="goToByScroll('page2'); return false;" href="#">团购</a> <strong class="hover"></strong>
+								</li>
+								<li class=" men2">
+									<a onClick="goToByScroll('page3'); return false;" href="#">地图</a>
+									<strong class="hover"></strong>
+								</li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<h1>
+						<a href="#" onClick="goToByScroll('page1'); return false;"></a>
+					</h1>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<!--=======content================================-->
+		<div id="page1" class="content">
+		<img src="images/wanggou1.jpg" width="50%" height="50%">
+		<div class="zerogrid">
+			<div class="col-full">
+				<div class="wrap-col">
+					<div class="slogan">
+
+						<div class="text1">
+							<div align="left"><br> 
+								网购已经成为我们生活中不可或缺的一部分，可以在家“逛商店”，订货不受时间、地点的限制，获得较大量的商品信息，可以买到当地没有的商品，为我们的日常生活提供了极大的便利。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="page2" class="content">
+		<img src="images/tuangou1.png" width="50%" height="50%">
+		<div class="zerogrid">
+			<div class="col-full">
+				<div class="wrap-col">
+					<div class="slogan">
+
+						<div class="text1">
+							<div align="left"><br> 
+								让每一个人都能找到更优惠的团购商品，让不相识的消费者共同享受物美价廉的服务。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div id="page3" class="content">
+		<img src="images/ditu2.jpg" width="50%" height="50%">
+		<div class="zerogrid">
+			<div class="col-full">
+				<div class="wrap-col">
+					<div class="slogan">
+
+						<div class="text1">
+							<div align="left"><br> 
+								专业的地图导航，全面的生活信息，智能的出行指南。电子地图为生活增彩添色。衣食住行吃喝玩乐全方位海量生活信息可供搜索查询。自动生成“最短”“最快”“最省钱”等多种路线规划以供选择，可根据实时路况选择最优公交/驾车出行路线。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
