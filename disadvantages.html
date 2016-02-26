@@ -23,21 +23,24 @@
             </div>
             <table class="table table-bordered">
                 <tr>
-                    <td class="orange" colspan="3">
-                        <img src="images/netCheat.jpg" alt="网络诈骗图1">
-                        <img src="images/adroit7.jpg" alt="荒废学业图2">
-                        <a id="toTop"></a>
+                    <td class="orange" colspan="2">
+                        <a href="javascript:;">
+                            <img src="images/physical1.jpg" alt="荒废学业图1">
+                        </a>
                     </td>
                     <td class="purple" colspan="3">
-                        <a href="#netFraud">网络诈骗</a>
+                        <a href="javascript:;" class="mao">荒废学业</a>
                     </td>
-                    <td class="blue" colspan="2">
-                        <img src="images/netCheat1.jpg" alt="网络诈骗图2">
+                    <td class="blue" colspan="3">
+                        <a href="javascript:;">
+                            <img src="images/mentally1.jpg" alt="荒废学业图2">
+                            <img src="images/study2.jpg" alt="荒废学业图2">
+                        </a>
                     </td>
                 </tr>
                 <tr>
                     <td class="word blue" colspan="2">
-                        <a href="#physical">生理健康</a>
+                        <a href="javascript:;" class="mao">生理健康</a>
                     </td>
                     <td class="black" colspan="4">
                         <span class="title">Disadvantages</span>
@@ -46,35 +49,41 @@
                         <!-- <img src="images/title.png" alt="" style="border:none"> -->
                     </td>
                     <td class="word orange" colspan="2">
-                        <a href="#mentally">心理健康</a>
+                        <a href="javascript:;" class="mao">心理健康</a>
                     </td>
                 </tr>
                 <tr>
-                    <td class="orange" colspan="2">
-                        <a href="#study">
-                            <img src="images/physical1.jpg" alt="荒废学业图1">
-                        </a>
+                    <td class="orange" colspan="3">
+                        <img src="images/netCheat.jpg" alt="网络诈骗图1">
+                        <img src="images/adroit7.jpg" alt="荒废学业图2">
+                        <!-- <a id="toTop"></a> -->
                     </td>
                     <td class="purple" colspan="3">
-                        <a href="#study">荒废学业</a>
+                        <a href="javascript:;" class="mao">网络诈骗</a>
                     </td>
-                    <td class="blue" colspan="3">
-                        <a href="#study">
-                            <img src="images/mentally1.jpg" alt="荒废学业图2">
-                            <img src="images/study2.jpg" alt="荒废学业图2">
-                        </a>
+                    <td class="blue" colspan="2">
+                        <img src="images/netCheat1.jpg" alt="网络诈骗图2">
                     </td>
                 </tr>
             </table>
             <div class="gotoTop">
-                <a href="#toTop"><i class="fa fa-arrow-up"></i></a>
+                <a href="javascript:;"><i class="fa fa-arrow-up"></i></a>
+            </div>
+            <div>
+                <ul class="nav nav-pills">
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">网络诈骗</a></li>
+                    <li><a href="#">心理健康</a></li>
+                    <li><a href="#">生理健康</a></li>
+                    <li><a href="#">荒废学业</a></li>
+                </ul>
             </div>
             <div class="clear"></div>
         </div>
 
         <!--start 对学业的影响-->
         <div id="study" class="page">
-            <h1><a name="study">荒废学业</a></h1>
+            <h1 id="item_1">荒废学业</h1>
             <div class="studyIntro">
                 <p>
                     在互联网已经移动化的今天，学生在课堂上携带手机已经非常正常，更是有很多学生在上课过程中禁不住诱惑摆弄手机，这对学生的学习带来了一定程度的负面影响。对于学生而言，久而久之，也就形成了习惯，在上课时会不时地禁不住上网的诱惑，从而抛弃课堂上课程的学习，去干自己最喜欢做的事情。
@@ -95,7 +104,7 @@
 
         <!--start 对生理健康的影响-->
         <div id="physical" class="page">
-            <h1><a name="physical">生理健康</a></h1>
+            <h1 id="item_2">生理健康</h1>
             <span class="leftContent">
                 <p>
                     由于大学生们长时间耗费在pc端和移动端的互联网中，形成了网络成瘾问题（即网络沉溺综合征），典型症状包括整天挂在网上，通宵达旦，导致体能下降、生物钟紊乱、注意力难以集中、头昏眼花、双手颤抖、疲乏无力、食欲不振等等不良生理反应，严重者甚至“走火入魔”，出现体能衰竭。
@@ -113,7 +122,7 @@
 
         <!--start 对心理健康的影响-->
         <div id="mentally" class="page">
-            <h1><a name="mentally">心理健康</a></h1>
+            <h1 id="item_3">心理健康</h1>
             <div class="topContent">
                 <span class="mentalImg">
                     <img src="images/mentally.jpg" alt="心理健康图1">
@@ -150,7 +159,7 @@
 
         <!--start 网络诈骗-->
         <div id="netFraud" class="page">
-            <h1><a name="netFraud">网络诈骗</a></h1>
+            <h1 id="item_4">网络诈骗</h1>
 
             <div class="banner">
                 <ul>
@@ -274,6 +283,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/unslider.min.js"></script>
+        <script src="js/disadvantages.js"></script>
         <!-- <script src="js/disadvantages.js"></script> -->
         <script type="text/javascript">
             $(".menu").click(function(){

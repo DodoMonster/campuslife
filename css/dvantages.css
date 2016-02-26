@@ -6,6 +6,7 @@ body{
     font-family: "微软雅黑";
     text-align: center;
     font-size: 1.5vw;
+    color: #fff;
 }
  a{
     font-family: "华文行楷";
@@ -138,52 +139,32 @@ tr,td{
     font-weight: 700;
     vertical-align: middle;
 }
-td img{
-    width:200px;
-    height: 200px;
-    border: 1px solid #eee;
-    border-radius: 50%;
-}
-.blue{
-    background: url('../images/bg2.jpg');
-}
-.black{
-    background: url('../images/bg0.png');
-    width:40%;
-}
-.black .title{
-    position: relative;
-    top: 50px;
-    color: #fff;
-    font-size: 4vw;
-    font-weight: 700;
-}
-
-.black .title i{
-    font-style: normal;
-    color: #cd3700;
-}
-.black .small{
-    position: relative;
-    top: 40px;
-    left: 30%;
-    color: #9370DB;
-}
-.purple{
-    background: url('../images/bg1.jpg');
-    width:20%;
-}
 .orange{
-    background: url('../images/bg3.jpg');
+    background-color: orange;
 }
-.purple a,.word a{
-    display: inline-block;
-    width:200px;
-    height: 200px;
-    /*border: 1px solid #eee;*/
-    border-radius: 50%;
-    line-height: 200px;
-    color: #FFEFD5;
+.yellow{
+    background-color:#FFD700;
+}
+.green{
+    background-color:#9ACD32;
+}
+.center{
+    background-color:#FAFAD2;
+}
+.center img{
+    margin-top: 30px;
+}
+.table a{
+    color:#fff;
+}
+.table .fa{
+    font-size: 8vw;
+}
+.long .fa{
+    margin-left: 10%;
+}
+.longer .fa{
+    margin-left: 15%;
 }
 /*--ended Disadvantages首页--*/
 
@@ -196,6 +177,7 @@ td img{
     width: 300px;
     margin:20px auto;
     font-size: 2.5vw;
+    color:#337ab7;
     padding-top: 50px;
     margin-bottom: 50px;
     border-bottom: 2px solid #337ab7;
@@ -207,15 +189,14 @@ td img{
     /*font-family: "微软雅黑";*/
     text-indent: 2em;
     text-align: left;
-}
-/*--start 荒废学业--*/
-#study{
-    margin-top: -20px;
-}
-#study .studyIntro,.banner p{
     width:80%;
     margin:0 auto;
     padding-bottom: 30px;
+}
+/*--start 学业--*/
+#study{
+    background: #eaeaea;/*灰色*/
+    color: #000;
 }
 .studyImg{
     height:320px;
@@ -231,65 +212,35 @@ td img{
     border:1px solid gray;
     border-radius: 5px;
 }
-/*--ended 荒废学业--*/
+/*--ended 学习--*/
+#contact{
 
-/*--start 对生理健康的影响--*/
-#physical{
-    background: #eaeaea;
+    background-color: #f17c72;/*red*/
 }
-.leftContent{
-    display:inline-block;
-    height: 50%;
-    width:35%;
+#share{
+    background-color: #32ac97;/*green*/
+}
+/*--start 对创业机遇的影响--*/
+#chance{
+    background-color:#7f4c76;/*purple*/
+    /*color: #fff;*/
+}
+#life{
+    background-color:#334960;/*blue*/
+
 }
 .arrow{
     position: relative;
-    left:60px;
-    bottom: 50px;
+    top:140px;
+    left: -30px;
 }
 .arrow .fa{
     font-size: 50px;
 }
-.rightContent img{
-    float: right;
-    width:30%;
-    margin-right: 15%;
-    height:50%;
-    height:300px;
-}
-/*--ended 对生理健康的影响--*/
+/*--ended 对创业机遇的影响--*/
 
-/*--start 对心理健康的影响--*/
-#mentally{
-    background: #eaf7f4;
-}
-#mentally img{
-    border:1px solid #eee;
-    border-radius: 50%;
-    height:400px;
-    width:400px;
-}
-#mentally .mentalIntro{
-    display: inline-block;
-    width:60%;
-    height:400px;
-}
-.topContent{
-    margin-bottom: 50px;
-}
-.topContent img{
-    float: left;
-    margin-left: 50px;
-}
-.bottomContent img{
-    float: right;
-    margin-right: 50px;
-}
-/*--ended 对心理健康的影响--*/
-
-/*--start 网络诈骗--*/
+/*--start 知天下事--*/
 #netfraud{
-    /*background: #fdf1e6;*/
     background: #dd7674;
 }
 .banner {
@@ -400,6 +351,9 @@ td img{
     width:350px;
     z-index: 5;
 }
+/*ended 知天下事*/
+
+/*start 互联网精神*/
 .preventFraud{
     background: #fdf1e6;
     padding-top: 50px;
@@ -411,6 +365,7 @@ td img{
     padding:10px 20px;
     border-radius: 5px;
     background: #fff;
+    color:#000;
     margin-bottom: 50px;
     font-size: 2.5vw;
     box-shadow: 5px 5px 5px #6c6;
@@ -428,7 +383,8 @@ td img{
     width:70%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 30%;
+    margin-top: 40%;
+    font-size: 3vw;
 }
 .tips1{
     background: url('../images/tips1.png') no-repeat;
@@ -446,20 +402,7 @@ td img{
     background: url('../images/tips4.png') no-repeat;
     background-size: 100%;
 }
-.slogan{
-    border:5px solid gray;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-    width:70%;
-    margin:0 auto;
-    padding: 10px 0;
-}
-.slogan p{
-    font-size: 2.2vw;
-    width:450px;
-    margin:0 auto;
-    text-indent: 0;
-}
-/*--ended 网络诈骗--*/
+/*ended 互联网精神*/
 
 /*--start footer--*/
 footer{
