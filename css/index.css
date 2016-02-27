@@ -1,83 +1,139 @@
-*{
+*,body{
     margin: 0;
     padding: 0;
 }
+body{
+    background: #47c9af;
+    background-size: 100%;
+	font-weight:300;
+	font-size:1.5em;
+    overflow: hidden;
+	font-family: "Raleway","Araill";
+}
+.container{
+    width:100%;
+    height: 800px;
+    z-index: -99;
+    border:1px solid #eee;
+    border-radius: 5px;
+}
+ul{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}
 
-header{
-    height: 40%;
-    width: 100%;
-    margin: 0 auto;
-    background: #00868B;
-}
-header h1{
-    color:#ffffff;
-    border:3px solid #fff;
-    width:400px;
-    padding:20px;
-    margin:0 auto;
-    text-align:center;
-    position: relative;
-    font-size: 50px;
-    font-family: 华文行楷;
-    top: 50px;
+a:link,a:visited,a:focus{
+	text-decoration: none;
+	outline: none;
 }
 
-.banner{
-    display:block;
-    height:100px;
-    width:90%;
-    margin:0 auto;
+*,*:after,*:before{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;/*防止任意标签生成的效果影响盒子大小*/
 }
-.banner ul {
-    display:block;
+
+*:after,*:before{
+	display:block;
+	content:"";
 }
-.banner li{
-    float:left;
-    text-align:center;
-    list-style:none;
-    width:200px;
-    font-size: 20px;
-    font-family: 微软雅黑;
+
+*:after{
+	clear:both;
+	}/*清除浮动*/
+
+/*start Navgation*/
+.nav{
+	width:800px;
+	height:300px;
+	margin:120px 50px 200px 100px;
 }
-.banner li a{
-    color: #333;
-    -webkit-transition:color 0.5s;
-	transition:color 0.5s;
+.nav li{
+	display: inline-block;
+	margin:0em 1em;
 }
-.banner li .circle{
-    height: 100px;
-    width:100px;
-    margin: 0 auto;
-    margin-top:20px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    border: 3px solid #333;
-    -webkit-transition:box-shadow 0.5s;
-	transition:box-shadow 0.5s;
+.tooltip{/*a*/
+	display: inline-block;
+	font-weight:700;
+    color:rgba(0,0,0,0.3);
+	padding: 0.15em 0.25em 0 0 ;
+	position: relative;
+	z-index: 999;/*设置元素的堆叠顺序*/
+	-webkit-transition:color 1s;
+	transition:color 1s;
 }
-.banner li .fa{
-    padding-top: 15px;
-    font-size:60px;
+.tooltip:hover,.aOn{
+    border-bottom: 3px solid #fff;
+    color:#fff;
 }
-.banner li  a:hover,.aOn{
-    color: #000 !important;
-    text-decoration: none;
-    border-bottom: 2px solid #000;
+.tooltip .tooltip-content {/*图标span*/
+    position: absolute;
+	z-index: 9999;
+	width: 80px;
+	height: 80px;
+	border-radius:50px;
+	background: #fff;
+	left:50%;
+	margin-left: -40px;
+	bottom: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 25px;
+	color: #47c9af;
+	opacity: 0;
+	-webkit-transition:opacity 1s,webkit-transform 1s;
+	transition:opacity 1s,transform 1s;
 }
-.banner li .circle:hover,.circleOn{
-    border: none !important;
-    -moz-box-shadow: 0px 0px 5px 10px #00868B;
-    box-shadow: 0px 0px 5px 10px #00868B;
+.tooltip .tooltip-content i{/*span图标*/
+	opacity:0;
+	-webkit-transition:opacity 1s,webkit-transform 1s;
+	transition:opacity 1s,transform 1s;
+}
+.tooltip-effect .tooltip-content {
+	-webkit-transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+	transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+}
+.tooltip-effect .tooltip-content i{
+	-webkit-transform:translate3d(0,20px,0);
+	transform:rotate3d(0,20px,0);
+}
+.tooltip-effect .tooltip-content i{
+	-webkit-transform:scale3d(0,0,1);
+	transform:scale3d(0,0,1);
+}
+.tooltip:hover .tooltip-content,.tooltip:hover .tooltip-content i,.tooltipOn,.faOn{
+	opacity: 1 !important;
+	-webkit-transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1) !important;
+	transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1) !important;
+}
+/*ended navgation*/
+
+h1{
+   color:#ffffff;
+   width:50%;
+   margin:0 auto;
+   text-align:center;
+   position: relative;
+   font-size: 100px;
+   font-family: 华文行楷;
+   bottom:350px;
 }
 
 /*--start footer--*/
 footer{
     position:absolute;
-    bottom:10px;
+    bottom:20px;
     left:40%;
 }
 footer p{
     text-align: center;
+    color: #ffffff;
+    font-size: 17px;
 }
 footer .fa{
     font-size: 20px;
