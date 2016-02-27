@@ -33,6 +33,9 @@ body{
     position: relative;
     top:15px;
 }
+.aOn{
+    color: #47c9af !important;
+}
 .navigation{
     width:200px;
     height:400px;
@@ -70,6 +73,9 @@ ul.nav li a:hover{
     background: #337ab7;
     color:#fff;
 }
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background-color: #47c9af !important;
+}
 .active{
     background: #337ab7;
     color: #fff;
@@ -81,7 +87,6 @@ ul.nav li a:hover{
 }
 .navigation li a{
     color:#E8E8E8;
-    /*font-family: "微软雅黑";*/
 }
 .navigation .fa{
     color: #47c9af;
@@ -106,11 +111,7 @@ ul.nav li a:hover{
     transition: bax-shadow 0.5s,background 0.5;
 }
 .gotoTop:hover{
-    box-shadow:0 0 0 10px rgba(139,137,137,0.5);
-    background: #fff;
-}
-.gotoTop:hover .fa{
-    color:	#FFA500;
+    background: #47c9af;
 }
 .gotoTop .fa{
     font-size: 35px;
@@ -198,6 +199,7 @@ td img{
     font-size: 2.5vw;
     padding-top: 50px;
     margin-bottom: 50px;
+    color: #337ab7;
     border-bottom: 2px solid #337ab7;
 }
 .page h1 a:hover{

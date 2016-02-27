@@ -1,22 +1,12 @@
 body{
     margin:0;
 	padding:0;
-	/*background: #47c9af;*/
-    background: url('../images/bacg.jpg') no-repeat center center;
-    background-size: 100% 100%;
+	background: #47c9af;
+    background-size: 100%;
 	color:#74777b;
 	font-weight:300;
 	font-size:1.5em;
 	font-family: "Raleway","Araill";
-    /*overflow: hidden;*/
-}
-.container{
-    width:100%;
-    height: 800px;
-    z-index: -99;
-    background: rgba(0,0,0,0.5);
-    border:1px solid #eee;
-    border-radius: 5px;
 }
 
 ul{
@@ -48,7 +38,7 @@ a:link,a:visited,a:focus{
 /*Navgation*/
 .nav{
 	width:800px;
-	margin:100px 50px 70px 100px;
+	margin:100px 50px 50px 100px;
 }
 .nav li{
 	display: inline-block;
@@ -57,8 +47,7 @@ a:link,a:visited,a:focus{
 .tooltip{/*a*/
 	display: inline-block;
 	font-weight:700;
-	/*color: rgba(0,0,0,0.3);*/
-    color: #DCDCDC;
+	color: rgba(0,0,0,0.3);
 	padding: 0.15em 0.25em 0 0 ;
 	position: relative;
 	z-index: 999;/*设置元素的堆叠顺序*/
@@ -175,6 +164,7 @@ a:link,a:visited,a:focus{
     width:60%;
     padding-left: 20px;
 }
+/*ended*/
 
 /*--start footer--*/
 footer{
